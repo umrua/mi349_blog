@@ -19,7 +19,9 @@
     </header>
     <section>
         <h2>Contact Me</h2>
-        <form name="contact" method="post" style="display: flex; flex-direction: column; max-width: 400px; gap: 0.75em;" data-netlify="true">
+        <form name="contact" method="post" style="display: flex; flex-direction: column; max-width: 400px; gap: 0.75em;" data-netlify="true" netlify-honeypot="bot-field">
+            <label for="bot-field" style="display: none;"></label>
+            <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
             <label for="name" style="display: block;">Name:</label>
             <input id="name" type="text" name="name" required>
             <label for="email" style="display: block;">Email Address:</label>
