@@ -59,15 +59,13 @@
     </section>
     <footer>
         <hr>
-        <section id="newsletter">
+        <section>
             <h2>Subscribe to My Newsletter</h2>
             <form name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                <label>
-                    <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
-                </label>
-                <label>Email Address:
-                    <input type="email" placeholder="you@example.com" required>
-                </label>
+                <label for="bot-field" style="display: none;"></label>
+                <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
+                <label for="email">Email Address:</label>
+                <input id="email" type="email" name="email" placeholder="you@example.com" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
