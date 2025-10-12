@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screen.css">
     <title>Umar | Blog</title>
 </head>
 <body>
     <header>
-        <h1>Muhammad Umar's Blog Website</h1>
+        <h1>Muhammad Umar's Blog</h1>
         <nav>
-            <ul style="list-style: none; display: flex; gap: 1em; padding: 0;">
+            <ul class="nav-list">
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr>
     </header>
-    <section id="blog">
-        <h2>Latest Blogs</h2>
-        <article class="blog-post">
+    <h2>Latest Blogs</h2>
+    <section id="blogContainer">
+        <article class="post">
             <h3>Data Brokers: Security Issues & Information Deletion</h3>
             <time datetime="2025-09-28" title="September 28, 2025">September 28, 2025</time>
             <address class="author"><a rel="author" href="about.html">Muhammad Umar</a></address>
-            <figure><img src="info.jpg" alt="Stock Photo about Information" style="width:300px;height:300px;object-fit:cover;"></figure>
-            <p>I recently did an assignment in my Information and Society course at Michigan State University regarding the topic of data brokers. I knew a tad bit about data brokers prior to reading about it and already had a negative opinion about them. However, after taking the time to engage with the topic in more detail via reading published articles in databases, it only reinforced my belief that they need to get heavily regulated. One of the articles I read talked about how security breaches allows identifiable, private data to get into the wrong hands. Your data, once collected by companies for their own use, can easily be used against you by bad actors for things like manipulation, tracking, or just used in algorithms you don't consent to. And the worst part is, such data brokers that fall victim to security breaches often get off with minimal punishment. The consumers ultimately get hurt. However, I am hopeful for the future of data collection. California quite recently signed into law their Delete Act, which allows consumers to send a single, simple request for the deletion of their data within the systems of the data brokers and their partnered contractors. Such legislation gives more power and control back to consumers. Hopefully a law like that becomes more widespread.</p>
+            <figure><img src="info.jpg" alt="Stock Photo about Information"></figure>
+            <p>I recently did an assignment in my Information and Society course at Michigan State University regarding the topic of data brokers. I knew a tad bit about data brokers prior to reading about it and already had a negative opinion about them. However, after taking the time to engage with the topic in more detail via reading published articles in databases, it only reinforced my belief that they need to get heavily regulated. One of the articles I read talked about how security breaches allows identifiable, private data to get into the wrong hands. Your data, once collected by companies for their own use, can easily be used against you by bad actors for things like manipulation, tracking, or just used in algorithms you don't consent to. And the worst part is, such data brokers that fall victim to security breaches often get off with minimal punishment. The consumers ultimately get hurt.</p>
+            <p>However, I am hopeful for the future of data collection. California quite recently signed into law their Delete Act, which allows consumers to send a single, simple request for the deletion of their data within the systems of the data brokers and their partnered contractors. Such legislation gives more power and control back to consumers. Hopefully a law like that becomes more widespread.</p>
         </article>
-        <article class="blog-post">
+        <article class="post">
             <h3>Childhood Dream Cars</h3>
             <time datetime="2025-09-27" title="September 27, 2025">September 27, 2025</time>
             <address class="author"><a rel="author" href="about.html">Muhammad Umar</a></address>
-            <figure><img src="car.jpg" alt="Picture of Cars" style="width:300px;height:300px;object-fit:cover;"></figure>
+            <figure><img src="car.jpg" alt="Picture of Cars"></figure>
             <p>Fast, stylish cars have always appealed to me growing up. I remember being so in love with the hyper cars of Europe like Lamborghini, Ferrari, Bugatti, Aston Martin, Koenigsegg, and the like. In any racing game I'd play, I'd always pick these famous brand cars that many dream to own, as young me thought these cars were the pinnacle of the industry. However, that would quickly change when I was reeled in by the Fast & Furious movie series. The cars they'd use in the movies weren't these luxury hyper cars I was already familiar with, they were cheap (at the time) modded, every-day looking street cars. Below is a few cars I saw that I absolutely love:</p>     
-            <table>
+            <table class="table">
                 <tr>
                     <th>Brand</th>
                     <th>Model</th>
@@ -58,9 +59,8 @@
         </article>
     </section>
     <footer>
-        <hr>
-        <section>
-            <h2>Subscribe to My Newsletter</h2>
+        <h2>Subscribe to My Newsletter</h2>
+        <section id="newsletter">
             <form name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
                 <label for="bot-field" style="display: none;"></label>
                 <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">

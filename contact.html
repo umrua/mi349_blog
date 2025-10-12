@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screen.css">
     <title>Umar | Contact</title>
 </head>
 <body>
     <header>
-        <h1>Muhammad Umar's Blog Website</h1>
+        <h1>Muhammad Umar's Blog</h1>
         <nav>
-            <ul style="list-style: none; display: flex; gap: 1em; padding: 0;">
+            <ul class="nav-list">
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr>
     </header>
-    <section>
-        <h2>Contact Me</h2>
+    <h2>Contact Me</h2>
+    <section id="contactContainer">
         <form name="contact" method="post" style="display: flex; flex-direction: column; max-width: 400px; gap: 0.75em;" data-netlify="true" netlify-honeypot="bot-field">
             <label for="bot-field" style="display: none;"></label>
             <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
