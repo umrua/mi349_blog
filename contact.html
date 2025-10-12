@@ -17,26 +17,57 @@
             </ul>
         </nav>
     </header>
-    <h2>Contact Me</h2>
+    <h2>> Contact Me</h2>
     <section id="contactContainer">
-        <form name="contact" method="post" style="display: flex; flex-direction: column; max-width: 400px; gap: 0.75em;" data-netlify="true" netlify-honeypot="bot-field">
-            <label for="bot-field" style="display: none;"></label>
-            <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
-            <label for="name" style="display: block;">Name:</label>
-            <input id="name" type="text" name="name" required>
-            <label for="email" style="display: block;">Email Address:</label>
-            <input id="email" type="email" name="email" placeholder="you@example.com" required>
-            <label for="reason" style="display: block;">Reason for Contact:</label>
-            <select id="reason" name="reason[]" required>
-                <option value="" disabled selected>Select a reason...</option>
-                <option value="hello">Just Saying Hi!</option>
-                <option value="opportunity">Looking for a Contractor</option>
-                <option value="interview">Interested in an Interview</option>
-            </select>
-            <label for="message" style="display: block;">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Submit</button>
+        <form class="contactForm" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+            <p class="hidden">
+                <label>Bot Field
+                    <input name="bot-field" type="text" tabindex="-1" autocomplete="off">
+                </label>
+            </p>
+            <p>
+                <label>Your Name:
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </label>
+            </p>
+            <p>
+                <label>Email Address: 
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+            </p>
+            <p>
+                <label>Reason for Contact:            
+                    <select name="reason[]" required>
+                        <option value="" disabled selected>Select a reason...</option>
+                        <option value="hello">Just Saying Hi!</option>
+                        <option value="opportunity">Looking for a Contractor</option>
+                        <option value="interview">Interested in an Interview</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Your Message:
+                    <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </label>
+            </p>           
+            <p>
+                <button type="submit">Submit</button>
+            </p>
         </form>
     </section>
+    <footer>
+        <section id="newsletterContainer">
+            <h2>Subscribe to My Newsletter</h2>
+            <form class="newsletterForm" name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <label class="hidden">
+                Bot Field <input name="bot-field" type="text" tabindex="-1" autocomplete="off">
+                </label>
+                <label>
+                Email: <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@
             </ul>
         </nav>
     </header>
-    <h2>Latest Blogs</h2>
+    <h2>> Latest Blogs</h2>
     <section id="blogContainer">
         <article class="post">
             <h3>Data Brokers: Security Issues & Information Deletion</h3>
@@ -59,13 +59,15 @@
         </article>
     </section>
     <footer>
-        <h2>Subscribe to My Newsletter</h2>
-        <section id="newsletter">
-            <form name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                <label for="bot-field" style="display: none;"></label>
-                <input name="bot-field" type="text" style="display: none" tabindex="-1" autocomplete="off">
-                <label for="email">Email Address:</label>
-                <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        <section id="newsletterContainer">
+            <h2>Subscribe to My Newsletter</h2>
+            <form class="newsletterForm" name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <label class="hidden">
+                Bot Field <input name="bot-field" type="text" tabindex="-1" autocomplete="off">
+                </label>
+                <label>
+                Email: <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
                 <button type="submit">Subscribe</button>
             </form>
         </section>

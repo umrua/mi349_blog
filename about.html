@@ -17,18 +17,35 @@
             </ul>
         </nav>
     </header>
-    <h2>About Me</h2>
+    <h2>> About Me</h2>
     <section id="aboutContainer">
-        <p>Hello! My name is Muhammad Umar, and I'm a student in my senior year at Michigan State University in the Communication Arts & Sciences college. I'm currently studying for my Bachelors of Arts in Information Science, as well as a secondary major in Games & Interactive Media. I hope to progress my knowledge and expertise in IT networking and systems administration, as well as my skills in web development!</p> 
-        <p>I am also an avid consumer of fantasy fiction. My free time is largely spent reading, watching, discussing, and daydreaming about fantasy stories with rich worldbuilding and unique stories. Here's a list of a few series that I've really enjoyed!:</p>
-        <ul class="list">
-            <li>The Apothecary Diaries by Natsu Hyuuga</li>
-            <li>Michael Vey by Richard Paul Evans</li>
-            <li>Solo Leveling by Chugong</li>               
-            <li>Ranger's Apprentice by John Flanagan</li>
-            <li>One Piece by Eiichiro Oda</li>
-        </ul>
-        <img class="aboutimg" src="sky.jpg" alt="Picture of Sky">  
-    </section>     
+        <article class="aboutBox">
+            <h3>Hey there!</h3>
+            <img src="sky.jpg" alt="Picture of Sky">
+            <p>My name is Muhammad Umar, and I'm a student in my senior year at Michigan State University in the Communication Arts & Sciences college. I'm currently studying for my Bachelors of Arts in Information Science, as well as a secondary major in Games & Interactive Media. I hope to progress my knowledge and expertise in IT networking and systems administration, as well as my skills in web development!</p> 
+            <p>I am also an avid consumer of fantasy fiction. My free time is largely spent reading, watching, discussing, and daydreaming about fantasy stories with rich worldbuilding and unique stories. Here's a list of a few series that I've really enjoyed!:</p>
+            <ul class="list">
+                <li>The Apothecary Diaries by Natsu Hyuuga</li>
+                <li>Michael Vey by Richard Paul Evans</li>
+                <li>Solo Leveling by Chugong</li>               
+                <li>Ranger's Apprentice by John Flanagan</li>
+                <li>One Piece by Eiichiro Oda</li>
+            </ul>
+        </article>
+    </section>
+    <footer>
+        <section id="newsletterContainer">
+            <h2>Subscribe to My Newsletter</h2>
+            <form class="newsletterForm" name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <label class="hidden">
+                Bot Field <input name="bot-field" type="text" tabindex="-1" autocomplete="off">
+                </label>
+                <label>
+                Email: <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
