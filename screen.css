@@ -279,12 +279,41 @@ time {
     flex-direction: column;
   }
 
+  #blogContainer img {
+      max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  }
+
   .aboutBox img {
     float: none;
     display: block;
     margin: 0 auto 20px auto;
     width: 100%;
     height: auto;
+  }
+
+  header {
+    padding: 5px 10px;
+    height: auto;
+    z-index: 1000;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .nav-list {
+    gap: 0.3em;
+  }
+
+  .nav-list a {
+    padding: 0.3em 0.6em;
+    font-size: 0.85em;
   }
 }
 
